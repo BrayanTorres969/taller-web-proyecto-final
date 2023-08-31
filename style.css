@@ -41,3 +41,8 @@ nav ul {
 .logo {
   height: 100%;
 }
+
+/* Footer */
+.footer {
+  background-color: grey;
+}
