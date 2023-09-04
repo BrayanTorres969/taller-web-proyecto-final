@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+ol,
+ul {
+  list-style: none;
+}
+
 nav {
   /* position: fixed; */
   height: 60px;
