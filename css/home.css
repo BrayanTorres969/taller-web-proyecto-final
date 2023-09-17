@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&family=Rubik:wght@300;400;500;600;700;800&display=swap");
+#banner {
+  height: 100vh;
+  background-color: rgba(175, 175, 222, 0.511);
+  width: 100%;
+}
+
+#banner .carousel-inner {
+  width: 100%;
+  height: 100vh;
+}
+
+#banner .carousel-inner::after {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(178, 170, 236, 0.533);
+}
+
+#banner .carousel-item {
+  overflow: hidden;
+}
+
+#banner .carousel-item img {
+  width: 100%;
+  height: 100vh;
+}
+
+#banner .bienvenida {
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+#banner .bienvenida-texto {
+  font-size: 110px;
+  font-weight: bold;
+  font-family: "Cookie", cursive;
+  letter-spacing: 2px;
+  line-height: 100px;
+  padding: 5px;
+  /* text gradiant */
+  background: -webkit-linear-gradient(
+    317deg,
+    rgba(0, 60, 255, 0.81) 0%,
+    rgb(255 0 123) 70%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Testimonios */
+.testimonios {
+  background-color: rgba(255, 255, 255, 0.279);
+}
+.testimonios-container {
+  max-width: 1200px; /* Limita el ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonios-titulo {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.testimonios-container p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.testimonios-container > div {
+  display: flex;
+  justify-content: space-between; /* Espacio igual entre los testimonios */
+}
+
+/* Estilos para cada tarjeta de testimonio */
+.testimonio-card {
+  /* background: linear-gradient(to bottom, #ffc436, #ff9f00); */
+  background: linear-gradient(to bottom, #337ccf, #1450a3);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(50% - 20px); /* Ancho del 50% con espacio entre los testimonios */
+  text-align: left;
+}
+.testimonio-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+  float: left;
+  padding: 5px;
+}
+
+.testimonio-card > div {
+  padding: 10px;
+}
+
+.Testimonio-nombre {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.testimonio-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  /* color: #333; */
+  color: #fffadd;
+}
+
+/* Mapa */
+.mapa {
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.mapa_titulo_principal {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+
+.mapa_contenido {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .testimonios-container > div {
+    flex-direction: column;
+  }
+
+  .testimonio-card {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .mapa_contenido {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .mapa_titulo_principal {
+    font-size: 1.5em;
+  }
+
+  .mapa p {
+    margin-bottom: 1em;
+  }
+}
