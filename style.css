@@ -1,15 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&family=Rubik:wght@300;400;500;600;700;800&display=swap");
+:root {
+  --bg-text-shadow: 0 2px 4px rgb(13 0 77 / 8%), 0 3px 6px rgb(13 0 77 / 8%),
+    0 8px 16px rgb(13 0 77 / 8%);
+  --bg-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.621);
+}
+
+*::-webkit-scrollbar {
+  width: 0.4rem;
+}
+*::-webkit-scrollbar-track {
+  background: #06062c;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
-
-ol,
-ul {
-  list-style: none;
+body {
+  font-family: "Montserrat", sans-serif;
 }
-
+/* section Navbar */
 nav {
-  /* position: fixed; */
+  position: fixed;
   height: 60px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.279);
@@ -26,7 +38,28 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   margin-top: 15px;
-  color: black;
+}
+
+ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #42444a;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+ul li:hover::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 30px;
+  height: 3px;
+  /* display: none; */
+  transition: ease 2s;
 }
 
 .logo-container {
@@ -40,14 +73,39 @@ nav ul {
   display: flex;
   align-items: center;
   font-size: 30px;
-  color: rgb(66, 68, 74);
+  color: #42444a;
+  text-shadow: var(--bg-text-shadow);
 }
 
 .logo {
   height: 100%;
 }
+/* fin Navbar */
 
 /* Footer */
 .footer {
-  background-color: grey;
+  background-color: #555;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.developer {
+  font-size: 12px;
+  opacity: 0.8;
 }

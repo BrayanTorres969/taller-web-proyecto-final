@@ -3,7 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/home.css" />
     <title>Hotel | Paraiso</title>
   </head>
   <body>
@@ -13,67 +26,118 @@
         <p>Hotel Paraiso</p>
       </div>
       <ul>
-        <li><a href="index.html">Home</a></li> |
-        <li><a href="reservas.html">Alojamientos</a></li> |
-        <li><a href="servicios.html">Servicios</a></li> |
-        <li><a href="contactanos.html">Contactanos</a></li> 
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="reservas.html">Alojamientos</a></li>
+
+        <li><a href="servicios.html">Servicios</a></li>
+
+        <li><a href="contactanos.html">Contactanos</a></li>
       </ul>
     </nav>
     <!-- Seccion Carusel -->
-    <section>
-      <div>
-        <center>
-          <div>
-            <img src="./img/hotel1.jpg"alt="hotel1" />
-          </div>
-          <div>
-        </center>
+    <section
+      id="banner"
+      class="carousel slide carousel_section"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="carousel-image" src="./img/hotel1.jpg" alt="hotel2" />
+        </div>
+        <div class="carousel-item">
+          <img class="carousel-image" src="./img/hotel2.jpg" alt="hotel2" />
+        </div>
+        <div class="carousel-item">
+          <img class="carousel-image" src="./img/hotel3.jpg" alt="hotel3" />
+        </div>
+        <div class="carousel-item">
+          <img class="carousel-image" src="./img/hotel4.jpg" alt="hotel4" />
+        </div>
+        <div class="bienvenida">
+          <h1 class="bienvenida-texto">Bienvenidos al Paraiso</h1>
+        </div>
       </div>
     </section>
     <!-- Fin Carusel -->
+
     <!-- Seccion Testimonios -->
-    <section>
-      <div>
-        <h1 style="text-align: center;">Testimonios</h1>
-        <p>Algunos testimonios de clientes satisfechos</p>
+    <section class="testimonios">
+      <div class="testimonios-container">
+        <h1 class="testimonios-titulo">Testimonios</h1>
+        <p>Algunos testimonios de nuestros clientes satisfechos</p>
         <div>
-          <div>
-            <img src="./img/testimonio1.png" alt="testimonio1">
+          <div class="testimonio-card">
+            <img
+              class="testimonio-img"
+              src="./img/testimonio1.png"
+              alt="testimonio1"
+            />
             <div>
-                <h4>Luis Perez Yañez</h4>
-                <p>"Mi experiencia en este hotel ha sido excelente.
-                  Desde el momento en que llegué, todo el personal ha sido
-                  muy amable y servicial. La atención que recibí
-                  fue de primera clase y me sentí muy bien cuidado durante
-                  mi estadia. ¡Recomendaría este hotel a cualquiera!"</p>
+              <h4 class="Testimonio-nombre">Luis Perez Yañez</h4>
+              <p>
+                "Mi experiencia en este hotel ha sido excelente. Desde el
+                momento en que llegué, todo el personal ha sido muy amable y
+                servicial. La atención que recibí fue de primera clase y me
+                sentí muy bien cuidado durante mi estadia. ¡Recomendaría este
+                hotel a cualquiera!"
+              </p>
             </div>
           </div>
-          <div>
-            <img src="./img/testimonio2.png" alt="testimonio2">
+          <div class="testimonio-card">
+            <img
+              class="testimonio-img"
+              src="./img/testimonio2.png"
+              alt="testimonio2"
+            />
             <div>
-                <h4>Alejandra Ramos Cabrera</h4>
-                <p>"Estoy profundamente agradecida con todo el personal
-                  que trabaja en este hotel. Fui
-                  atendida con rapidez y eficacia, y siempre me sentí
-                  respetada y valorada. La calidad del servicio
-                  que recibí fue excelente y estoy muy satisfecha con mi estadia."
-                </p>
+              <h4 class="Testimonio-nombre">Alejandra Ramos Cabrera</h4>
+              <p>
+                "Estoy profundamente agradecida con todo el personal que trabaja
+                en este hotel. Fui atendida con rapidez y eficacia, y siempre me
+                sentí respetada y valorada. La calidad del servicio que recibí
+                fue excelente y estoy muy satisfecha con mi estadia."
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Fin Testimonios -->
+    <!-- Seccion Mapa -->
+    <section class="mapa">
+      <h3 class="mapa_titulo_principal">Nuestra ubicación</h3>
+      <p>Nuestro establecimiento esta ubicado en el corazón de la ciudad</p>
+
+      <div class="mapa_contenido">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24599.757049434567!2d-76.90175828538077!3d-12.023344446434354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3333fcdc1a7%3A0x202d2846e95a4e34!2sGran%20Hostal%20Para%C3%ADso!5e0!3m2!1ses!2spe!4v1694969405405!5m2!1ses!2spe"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <!-- Seccion Mapa -->
     <!-- Footer -->
-    <section class="footer">
-      <div>
-        <div>
-          <h5>© Copyright 2023 - Hotel Paraiso. Todos los derechos reservados.</h5>
-        </div>
-        <div>
-          <p>Desarrollado por el grupo 1 </p>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="copyright">
+            <p>
+              &copy; Copyright 2023 - Hotel Paraíso. Todos los derechos
+              reservados.
+            </p>
+          </div>
+          <div class="developer">
+            <p>Desarrollado por el grupo</p>
+          </div>
         </div>
       </div>
-    </section>
+    </footer>
 
     <!-- Fin footer -->
   </body>
