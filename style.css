@@ -15,6 +15,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -24,7 +25,8 @@ nav {
   position: fixed;
   height: 60px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.279);
+  /* background-color: rgba(255, 255, 255, 0.279); */
+  background-color: #ececec;
   z-index: 200;
   display: flex;
   justify-content: space-between;
@@ -108,4 +110,28 @@ ul li:hover::after {
 .developer {
   font-size: 12px;
   opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  nav {
+    margin-top: -60px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-container p {
+    font-size: 0.9em;
+  }
+  .footer-content {
+    flex-direction: column; /* Coloca los elementos en columna en pantallas pequeñas */
+  }
+
+  .copyright,
+  .developer {
+    margin-top: 10px; /* Agrega un margen superior entre los elementos en pantallas pequeñas */
+    font-size: 12px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+  }
 }

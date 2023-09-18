@@ -3,11 +3,13 @@
   height: 100vh;
   background-color: rgba(175, 175, 222, 0.511);
   width: 100%;
+  /* position: relative; */
 }
 
 #banner .carousel-inner {
   width: 100%;
   height: 100vh;
+  /* position: relative; */
 }
 
 #banner .carousel-inner::after {
@@ -66,7 +68,7 @@
 }
 
 .testimonios-titulo {
-  font-size: 32px;
+  font-size: 2em;
   margin-bottom: 10px;
 }
 
@@ -81,9 +83,7 @@
   justify-content: space-between; /* Espacio igual entre los testimonios */
 }
 
-/* Estilos para cada tarjeta de testimonio */
 .testimonio-card {
-  /* background: linear-gradient(to bottom, #ffc436, #ff9f00); */
   background: linear-gradient(to bottom, #337ccf, #1450a3);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -93,7 +93,7 @@
 }
 .testimonio-img {
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
   border-radius: 50%;
   margin-right: 20px;
   float: left;
@@ -104,7 +104,7 @@
   padding: 10px;
 }
 
-.Testimonio-nombre {
+.testimonio-nombre {
   font-size: 20px;
   margin: 0 0 10px;
 }
@@ -141,6 +141,36 @@
 
 /* Estilos responsivos para pantallas más pequeñas */
 @media (max-width: 768px) {
+  #banner {
+    height: auto;
+    margin-top: 60px;
+  }
+
+  #banner .carousel-inner {
+    height: auto;
+  }
+
+  #banner .carousel-inner::after {
+    display: none;
+  }
+
+  #banner .carousel-item {
+    overflow: hidden;
+    height: auto;
+  }
+
+  #banner .carousel-item img {
+    width: 100%;
+    height: 250px; /* Establece un ancho fijo para pantallas pequeñas */
+  }
+
+  #banner .bienvenida {
+    height: auto;
+  }
+
+  #banner .bienvenida-texto {
+    font-size: 1.5em; /* Reduce el tamaño del texto en pantallas más pequeñas */
+  }
   .testimonios-container > div {
     flex-direction: column;
   }
@@ -148,6 +178,15 @@
   .testimonio-card {
     margin-top: 10px;
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonio-img {
+    width: 100px; /* Ancho fijo para pantallas pequeñas */
+    height: 100px; /* Alto fijo para pantallas pequeñas */
+    padding: 5px;
   }
 
   .mapa_contenido {
