@@ -7,3 +7,4 @@ document.addEventListener("DOMContentLoaded", function () {
     menuToggle.classList.toggle("active"); // Agregamos o eliminamos la clase "active" en el botón
   });
 });
+//
