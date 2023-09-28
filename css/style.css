@@ -25,7 +25,6 @@ nav {
   position: fixed;
   height: 60px;
   width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.279); */
   background-color: #ececec;
   z-index: 200;
   display: flex;
@@ -82,6 +81,17 @@ ul li:hover::after {
 .logo {
   height: 100%;
 }
+
+.open-menu {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+}
+
 /* fin Navbar */
 
 /* Footer */
@@ -120,18 +130,71 @@ ul li:hover::after {
   nav ul {
     display: flex;
     flex-direction: column;
+    align-items: end;
+    width: 50%;
+    box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.5);
+  }
+
+  ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .menu {
+    display: none; /* Oculta el menú de escritorio en pantallas pequeñas */
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  /* menú se presenta como una lista centrada
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 1rem;
+    top: 45px;
+    left: auto;
+    right: 0;
+    background-color: #1c1c1c;
+    padding: 10px;
+    opacity: 1;
+  }
+  */
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #333;
+    opacity: 1;
+  }
+
+  .open-menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 24px;
+    color: #42444a;
   }
 
   .logo-container p {
     font-size: 0.9em;
   }
   .footer-content {
-    flex-direction: column; /* Coloca los elementos en columna en pantallas pequeñas */
+    flex-direction: column;
   }
 
   .copyright,
   .developer {
-    margin-top: 10px; /* Agrega un margen superior entre los elementos en pantallas pequeñas */
-    font-size: 12px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+    margin-top: 10px;
+    font-size: 12px;
   }
 }
