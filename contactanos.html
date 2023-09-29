@@ -8,6 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contactanos.css" />
     <title>Contactanos</title>
   </head>
   <body>
@@ -28,46 +29,73 @@
       </ul>
     </nav>
     <!-- Seccion Contactanos -->
-    <section>
-      <div>
-        <h1>Contáctanos</h1>
-        <form action="#">
-          <div>
-            <label for="nombre">Nombres:</label>
-            <input
-              type="text"
-              name="nombre"
-              id="nombre"
-              placeholder="Ingresa tu nombre"
-              required
-            />
+    <section class="contactanos">
+      <div class="container-gradient">
+        <div class="gradient-section">
+          <div class="gradient"></div>
+          <div class="gradient-content">
+            <h1 class="heading">
+              Valoramos tu <span>opinión</span> y estamos aquí para responder a
+              todas tus preguntas.
+            </h1>
+            <p>
+              Si deseas ponerte en contacto con nosotros, estamos disponibles
+              para garantizar que tengas la mejor experiencia posible.
+            </p>
           </div>
-          <div>
-            <label for="nombre">Apellidos:</label>
-            <input
-              type="text"
-              name="apellido"
-              id="apellido"
-              placeholder="Ingresa tu apellido"
-              required
-            />
-          </div>
-          <div>
-            <label for="correo">Email:</label>
-            <input
-              type="email"
-              name="correo"
-              id="correo"
-              placeholder="Ingresa tu correo"
-              required
-            />
-          </div>
-          <div>
-            <label for="comentario">Comentario:</label><br />
-            <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-          </div>
-          <input type="submit" name="" value="Enviar" />
-        </form>
+        </div>
+
+        <div class="form-section">
+          <h2>¡Contáctanos!</h2>
+          <p>Estamos aquí para escucharte</p>
+          <form action="#">
+            <div class="form-group">
+              <label for="nombre">Nombres:</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Ingresa tu nombre"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label for="apellido">Apellidos:</label>
+              <input
+                type="text"
+                name="apellido"
+                id="apellido"
+                placeholder="Ingresa tu apellido"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label for="correo">Email:</label>
+              <input
+                type="email"
+                name="correo"
+                id="correo"
+                placeholder="example@gmail.com"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label for="comentario">Comentario:</label>
+              <textarea
+                name="comentario"
+                id="comentario"
+                required
+                spellcheck="false"
+                autocomplete="off"
+                placeholder="Tu comentario o pregunta"
+              ></textarea>
+            </div>
+            <button class="boton-enviar" type="button">Enviar</button>
+          </form>
+        </div>
       </div>
     </section>
     <!-- Fin Contactanos -->
