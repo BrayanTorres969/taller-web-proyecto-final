@@ -8,6 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reservas.css" />
     <title>Reservas</title>
   </head>
   <body>
@@ -28,51 +29,86 @@
       </ul>
     </nav>
     <!-- Seccion Reservas -->
-    <section>
-      <div>
-        <h1>Nuestras Habitaciones</h1>
-      </div>
-      <div>
-        <div>
+    <section class="contenedor-reservas">
+      <h1 class="titulo-principal">Nuestras Habitaciones</h1>
+
+      <div class="imagenes">
+        <div class="imagen">
           <img
             src="./img/hotel1photo.webp"
             height="250"
             width="300"
             alt="hotel1"
           />
-          <h2>Habitación Superior</h2>
-          <button>Reservar</button>
+          <h2 class="habitacion-titulo">Habitación Superior</h2>
+          <p class="habitacion-descripcion">
+            Nuestra Habitación Superior es la elección perfecta para aquellos
+            que buscan una experiencia de comodidad inigualable. Diseñada
+            pensando en la satisfacción y el confort de nuestros huéspedes, esta
+            habitación es un oasis de serenidad en medio del ajetreo y el
+            bullicio de la ciudad
+          </p>
+          <p class="habitacion-precio">Desde S/ 50 esta noche</p>
+          <button class="btn-reservar">Reservar</button>
         </div>
-        <div>
+        <div class="imagen">
           <img
             src="./img/hotel2photo.jpg"
             height="250"
             width="300"
             alt="hotel2"
           />
-          <h2>Habitación VIP</h2>
-          <button>Reservar</button>
+          <h2 class="habitacion-titulo">Habitación VIP</h2>
+          <p class="habitacion-descripcion">
+            Nuestra Habitación VIP es el epítome del lujo y la exclusividad.
+            Diseñada meticulosamente con el objetivo de satisfacer los gustos
+            más exigentes, esta habitación redefine la experiencia de
+            alojamiento y te sumerge en un mundo de elegancia y confort de lo
+            más extravagante.
+          </p>
+          <p class="habitacion-precio">Desde S/ 120 esta noche</p>
+          <button class="btn-reservar">Reservar</button>
         </div>
-        <div>
+        <div class="imagen">
           <img
             src="./img/hotel3photo.avif"
             height="250"
             width="300"
             alt="hotel3"
           />
-          <h2>Habitación Matrimonial</h2>
-          <button>Reservar</button>
+          <h2 class="habitacion-titulo">Habitación Matrimonial</h2>
+          <p class="habitacion-descripcion">
+            Nuestra Habitación Matrimonial es el escenario perfecto para parejas
+            que buscan una escapada romántica llena de comodidad y encanto.
+            Diseñada con atención a los detalles y el romance en mente, esta
+            habitación ofrece un espacio íntimo donde puedes crear recuerdos
+            inolvidables juntos.
+          </p>
+          <p class="habitacion-precio">Desde S/ 80 esta noche</p>
+          <button class="btn-reservar">Reservar</button>
         </div>
-        <div>
+        <div class="imagen">
           <img
             src="./img/hotel4photo.jpg"
             height="250"
             width="300"
             alt="hotel4"
           />
-          <h2>Habitación Individual</h2>
-          <button>Reservar</button>
+          <h2 class="habitacion-titulo">Habitación Individual</h2>
+          <p class="habitacion-descripcion">
+            Nuestra Habitación Individual es la opción perfecta para los
+            viajeros que buscan comodidad y privacidad en un ambiente acogedor y
+            asequible. A pesar de su tamaño más compacto, esta habitación ofrece
+            todas las comodidades necesarias para una estancia relajante y
+            placentera.
+          </p>
+          <p class="habitacion-precio">Desde S/ 35 esta noche</p>
+          <button class="btn-reservar">Reservar</button>
         </div>
+      </div>
+      <div class="reservas-card">
+        <h2>Mis Reservas <i class="bi bi-calendar"></i></h2>
+        <p>No tiene reservas</p>
       </div>
     </section>
     <!-- Fin Reservas -->
