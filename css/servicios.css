@@ -107,7 +107,34 @@ body {
 
 @media (max-width: 768px) {
   .principal {
-    height: auto;
     margin-top: 60px;
+    padding-top: 25px;
+  }
+
+  .tarjetas {
+    margin-top: 20px;
+    width: 80%;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: start;
+    height: 670px;
+  }
+  .tarjeta {
+    width: 100%;
+    height: 100%;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  .contenedor-video {
+    width: 100%;
+    height: 120px;
+  }
+
+  .video {
+    height: 168px;
+    width: 100%;
   }
 }
