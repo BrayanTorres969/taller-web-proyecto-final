@@ -99,6 +99,20 @@
   cursor: pointer;
 }
 
+.result-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.result-container p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #3461ca;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
 @media screen and (max-width: 60rem) {
   .container-gradient {
     margin: 0;
