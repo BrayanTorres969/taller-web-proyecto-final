@@ -111,6 +111,10 @@ body {
     padding-top: 25px;
   }
 
+  .titulo-principal {
+    font-size: 14px;
+  }
+
   .tarjetas {
     margin-top: 20px;
     width: 80%;
